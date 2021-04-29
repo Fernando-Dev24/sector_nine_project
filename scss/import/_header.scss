@@ -1,0 +1,117 @@
+.header {
+   position: relative;
+   width: 100%;
+   height: 175vh;
+   background: url(../img/MG.jpg) no-repeat top;
+   background-size: cover;
+
+   .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 60px;
+   
+      .logo {
+         font-family: $font;
+         font-size: 0.9rem;
+         text-transform: uppercase;
+
+         .logo-item {
+            /* Add a shadow in all text's sides to simulate the white stroke */
+           text-shadow: 2px 0 0 $white, -2px 0 0 $white, 0 2px 0 $white, 0 -2px 0 $white;
+         }
+      }
+
+      .navbar {
+         display: inline-block;
+         font-family: $font;
+         font-weight: $boldFont;
+         font-size: 0.9rem;   
+         
+         .navbar-item {
+            padding: 0 30px;
+            text-decoration: none;
+            color: $bg;
+         }
+      }
+   }
+
+   .wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      
+      .social-media {
+         width: min-content;
+         text-align: left;
+         .social-media-item {
+            img {
+               width: 2vw;
+               max-width: 40px;
+            }
+         }
+         .social-media-item:first-child {
+            margin-bottom: 20px;
+         }
+      }
+
+      .wrapper-title {
+         .tagline {
+            width: 10%;
+            margin: 0 0;
+            border: 1px solid $accent;
+         }
+
+         h2 {
+            margin: 30px 0;
+            font-family: $font;
+            font-weight: $mediumFont;
+            font-size: 4rem;
+            color: $bg;
+         }
+      }
+
+      .slider {
+         display: flex;
+         justify-content: flex-end;
+         align-content: flex-start;
+      
+         .slider-text {
+            height: 12rem;
+            margin-right: 20px;
+            list-style: none;
+            text-align: right;
+            font-family: $font;
+            font-weight: $boldFont;
+         
+            li {
+               padding-bottom: 30px;
+               cursor: pointer;
+            }
+         }
+
+         .slider-bg {
+            position: relative;
+            width: 1.2%;
+            height: 12rem;
+            background: rgba($color: $bg, $alpha: 0.5);
+
+            .slider-indicator {
+               position: absolute;
+               width: 100%;
+               height: 48px;
+               background: $bg;
+
+            }
+         }
+      }
+   }
+
+   .gradient {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50vh;
+      background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+   }
+}

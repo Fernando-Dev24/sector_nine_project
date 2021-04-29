@@ -1,0 +1,57 @@
+.footer {
+   background: $bg;
+
+   .footer-container {
+      padding: 40px 0;
+      display: grid;
+      grid-template-columns: 60% 20% 20%;
+   
+      .footer-copyright {
+         font-family: $font;
+
+         .logo-item {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: $white;
+         }
+
+         .copyright-disclaimer {
+            color: #FFF;
+            opacity: 0.4;
+         }
+      }
+
+      .footer-list {
+         font-family: $font;
+         color: $white;
+      
+         .list-title {
+            text-transform: uppercase;
+            font-weight: $semiboldFont;
+            font-size: 1.2rem;
+            color: $accent;
+         }
+
+         ul {
+            padding: 0;
+            list-style: none;
+         
+            a {
+               color: $white;
+               text-decoration: none;
+               
+               li {
+                  font-size: 1rem;
+                  padding-bottom: 20px;
+                  cursor: pointer;
+               }
+                  
+               &:hover {
+                  color: $accent;
+                  transition: all 300ms ease;
+               }   
+            }
+         }
+      }
+   }
+}

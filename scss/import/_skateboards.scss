@@ -1,0 +1,99 @@
+.skateboards {
+   background: $bg;
+
+   .container {
+      max-width: 1000px;
+   
+      .skateboard-card {
+         /* Add this to get to show the entire 01 title when skateboards link is clicked */
+         padding-top: 40px;
+         margin-bottom: 200px;
+         display: grid;
+         grid-template-columns: 60% 40%;
+         place-items: center;
+         gap: 100px;
+
+         &:nth-child(2) {
+            grid-template-columns: 40% 60%;
+
+            .skateboard-content {
+               h3 {
+                  left: -10%;
+               }
+            }
+         }
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      
+         .skateboard-content {
+            position: relative;
+            font-family: $font;
+            color: #FFF;
+            /* background: #000; */
+         
+            h3 {
+               position: absolute;
+               top: -30%;
+               left: -18%;
+               margin: 0;
+               opacity: 0.1;
+               font-size: 10rem;
+               font-weight: $boldFont;
+            }
+
+            .tagline {
+               width: 20%;
+               margin: 0 0;
+               border: 1px solid $accent;
+            }
+
+            h4 {
+               margin-top: 20px;
+               margin-bottom: 27px;
+               text-transform: uppercase;
+               font-weight: $semiboldFont;
+               font-size: 4rem;
+            }
+
+            p {
+               font-weight: $regularFont;
+               font-size: 1rem;
+               line-height: 2rem;
+            }
+
+            .skateboard-btn {
+               display: flex;
+               align-items: center;
+               padding: 0 0;
+               font-weight: $boldFont;
+               background: transparent;
+               color: $accent;
+               
+               cursor: pointer;
+            
+               svg {
+                  transform: rotate(-90deg);
+                  margin-left: 1rem;
+                  path {
+                     fill: $accent;
+                  }
+               }
+            
+               &:hover svg {
+                  margin-left: 1.5rem;
+                  transition: all 200ms ease;
+               }
+            }
+         }
+
+         .skateboard-pic {
+            img {
+               width: 100%;
+               max-width: 500px;
+            }
+         }
+      }
+   }
+}
